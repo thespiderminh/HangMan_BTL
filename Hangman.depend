@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1646662587 source:f:\university\code\c++\hangmanupgrade\hangman\main.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+
+1652981043 source:f:\university\code\c++\hangmanupgrade\main.cpp
+	"Init.h"
+	"Music.h"
+	"Chunk.h"
+	"Image.h"
+	"Texture.h"
+	"Pencil.h"
+	"AllPencil.h"
+	"Word.h"
+	"Star.h"
+	"AllStar.h"
+	"Saw.h"
+	"Booster.h"
+	"GameProcess.h"
+
+1646664027 f:\university\code\c++\hangmanupgrade\sdl.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+
+1646664934 f:\university\code\c++\hangmanupgrade\hangman.h
+	<iostream>
+	<string>
+
+1647786953 f:\university\code\c++\hangmanupgrade\start.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	<string>
+
+1649729575 f:\university\code\c++\hangmanupgrade\image.h
+	<SDL.h>
+	<SDL_image.h>
+	<string>
+
+1652976540 f:\university\code\c++\hangmanupgrade\texture.h
+	"Chunk.h"
+
+1652957171 f:\university\code\c++\hangmanupgrade\init.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<vector>
+	<string>
+	<fstream>
+
+1649424991 source:f:\university\code\c++\hangmanupgrade\image.cpp
+	"Image.h"
+
+1652955350 f:\university\code\c++\hangmanupgrade\music.h
+
+1652974408 f:\university\code\c++\hangmanupgrade\chunk.h
+
+1652957606 f:\university\code\c++\hangmanupgrade\pencil.h
+
+1652629130 f:\university\code\c++\hangmanupgrade\allpencil.h
+
+1652955121 f:\university\code\c++\hangmanupgrade\word.h
+
+1652952461 f:\university\code\c++\hangmanupgrade\star.h
+
+1652983977 f:\university\code\c++\hangmanupgrade\gameprocess.h
+
+1652707675 f:\university\code\c++\hangmanupgrade\allstar.h
+
+1652951565 f:\university\code\c++\hangmanupgrade\saw.h
+
+1652783905 f:\university\code\c++\hangmanupgrade\booster.h
+

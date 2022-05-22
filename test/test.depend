@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1649431031 source:f:\university\code\c++\hngmnupgrd\hangmanupgrade\hangmanupgrade\image.cpp
+	"image.h"
+
+1649433130 f:\university\code\c++\hngmnupgrd\hangmanupgrade\hangmanupgrade\image.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	<string>
+
+1649431031 source:f:\university\code\c++\hngmnupgrd\hangmanupgrade\hangmanupgrade\main.cpp
+	"init.h"
+	"image.h"
+	"texture.h"
+
+1649431769 f:\university\code\c++\hngmnupgrd\hangmanupgrade\hangmanupgrade\init.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	<string>
+
+1649433130 f:\university\code\c++\hngmnupgrd\hangmanupgrade\hangmanupgrade\texture.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	<string>
+
+1649432936 source:f:\university\code\c++\hngmnupgrd\hangmanupgrade\hangmanupgrade\texture.cpp
+	"texture.h"
+

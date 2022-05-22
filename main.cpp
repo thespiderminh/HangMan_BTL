@@ -19,16 +19,16 @@ int main(int argc, char *argv[])
     srand(time(0));
     initSDL(gWindow, renderer);
     Music Background("Music/BackgroundMusic.mp3");
-//    Background.playinfi();
+    Background.playinfi();
 gameagain:
     Image hangman("Image/Hangman.png"), screen("Image/Background.png"), h, a, n, g, m, start("Image/PlayButton1.png"), title("Image/Title.png"), rule("Image/Rule.png"), word("Image/Word.png"), wrong("Image/Wrong0.png"), gameOverScreen("Image/Gameover1.png");
     Chunk Button("Music/Button.mp3"), Click("Music/Click.mp3"), Correct("Music/Correct.mp3"), Incorrect("Music/Wrong.mp3");
 
-//    startgame(&title, &start, &screen, &Button, &Click);
+    startgame(&title, &start, &screen, &Button, &Click);
 
     if(quit == true) return 0;
 
-//    part1(&screen, &rule, &wrong, &hangman, &word, &a, &n, &g, &m, &h, &Correct, &Incorrect, &gameOverScreen);
+    part1(&screen, &rule, &wrong, &hangman, &word, &a, &n, &g, &m, &h, &Correct, &Incorrect, &gameOverScreen);
 
     if(again == true)
     {
@@ -103,10 +103,11 @@ restartGame:
 
     ingame(isDead, oldTick, Stickman, frame, currentClip, Screen, allPencil, _type, allStars, pauseButton, playButton, Button, Click);
 
-    Chunk dieSound("Music/Die.mp3");
+    Music dieSound("Music/Die.mp3");
     dieSound.playonce();
 
     SDL_Delay(3000);
+    Background.playinfi();
 
     gameover(Screen, oldTick, Stickman, frame, currentClip);
 

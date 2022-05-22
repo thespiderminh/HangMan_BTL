@@ -78,3 +78,56 @@
 
 1652783905 f:\university\code\c++\hangmanupgrade\booster.h
 
+1652981043 source:f:\university\code\c++\hangmanupgrade\hangman_btl\main.cpp
+	"Init.h"
+	"Music.h"
+	"Chunk.h"
+	"Image.h"
+	"Texture.h"
+	"Pencil.h"
+	"AllPencil.h"
+	"Word.h"
+	"Star.h"
+	"AllStar.h"
+	"Saw.h"
+	"Booster.h"
+	"GameProcess.h"
+
+1652957171 f:\university\code\c++\hangmanupgrade\hangman_btl\init.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+	<vector>
+	<string>
+	<fstream>
+
+1652955350 f:\university\code\c++\hangmanupgrade\hangman_btl\music.h
+
+1652974408 f:\university\code\c++\hangmanupgrade\hangman_btl\chunk.h
+
+1649729575 f:\university\code\c++\hangmanupgrade\hangman_btl\image.h
+	<SDL.h>
+	<SDL_image.h>
+	<string>
+
+1652976540 f:\university\code\c++\hangmanupgrade\hangman_btl\texture.h
+	"Chunk.h"
+
+1652957606 f:\university\code\c++\hangmanupgrade\hangman_btl\pencil.h
+
+1652629130 f:\university\code\c++\hangmanupgrade\hangman_btl\allpencil.h
+
+1652955121 f:\university\code\c++\hangmanupgrade\hangman_btl\word.h
+
+1652952461 f:\university\code\c++\hangmanupgrade\hangman_btl\star.h
+
+1652707675 f:\university\code\c++\hangmanupgrade\hangman_btl\allstar.h
+
+1652951565 f:\university\code\c++\hangmanupgrade\hangman_btl\saw.h
+
+1652783905 f:\university\code\c++\hangmanupgrade\hangman_btl\booster.h
+
+1652983977 f:\university\code\c++\hangmanupgrade\hangman_btl\gameprocess.h
+

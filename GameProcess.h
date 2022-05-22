@@ -230,95 +230,95 @@ void animation(Texture* Screen, Texture* Stickman)
 {
     int y = 316;
     Texture  Gallow("Image/Hangman.png"), Hand("Image/Hand.png");
-//    while (y < 340)
-//    {
-//        while (SDL_PollEvent(&event) != 0)
-//        {
-//            if (event.type == SDL_QUIT)
-//            {
-//                quitSDL(gWindow, renderer);
-//                return;
-//            }
-//            Stickman->handleEventButNotMove();
-//        }
-//        y += 1;
-//        SDL_RenderClear(renderer);
+    while (y < 340)
+    {
+        while (SDL_PollEvent(&event) != 0)
+        {
+            if (event.type == SDL_QUIT)
+            {
+                quitSDL(gWindow, renderer);
+                return;
+            }
+            Stickman->handleEventButNotMove();
+        }
+        y += 1;
+        SDL_RenderClear(renderer);
         Screen->render(0, 0, 1600, 1200);
-//        Gallow.render(100, 230, 376, 376);
-//        Stickman->render(302, y, 139, 257);
-//        SDL_RenderPresent(renderer);
-//
-//    }
+        Gallow.render(100, 230, 376, 376);
+        Stickman->render(302, y, 139, 257);
+        SDL_RenderPresent(renderer);
+
+    }
 
     int stick[] = {2, 3, 2, 1, 4, 5, 4, 7, 8, 9, 10, 11, 12, 13, 14};
     int i = -1;
 
-//    while (i<14)
-//    {
-//        while (SDL_PollEvent(&event) != 0)
-//        {
-//            if (event.type == SDL_QUIT)
-//            {
-//                quitSDL(gWindow, renderer);
-//                return;
-//            }
-//            Stickman->handleEventButNotMove();
-//        }
-//        i++;
-//        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
-//        SDL_RenderClear(renderer);
-//        Screen->render();
-//        Gallow.render();
-//        Stickman->loadTextureFromFile("Image/Stickman" + to_string(stick[i]) + ".png");
-//        Stickman->render();
-//        SDL_RenderPresent(renderer);
-//        if (stick[i] == 2)
-//            SDL_Delay(50);
-//        else if (stick[i] == 3)
-//            SDL_Delay(200);
-//        else if (i == 3)
-//            SDL_Delay(1500);
-//        else if (i == 4)
-//            SDL_Delay(1500);
-//        else if (i == 5)
-//            SDL_Delay(1500);
-//        else if (i == 6)
-//            SDL_Delay(800);
-//        else if (i == 7)
-//            SDL_Delay(100);
-//        else if (i == 8)
-//            SDL_Delay(30);
-//        else if (i == 9)
-//            SDL_Delay(30);
-//        else if (i == 10)
-//            SDL_Delay(30);
-//        else if (i == 11)
-//            SDL_Delay(30);
-//        else if (i == 12)
-//            SDL_Delay(30);
-//        else if (i == 13)
-//            SDL_Delay(30);
-//        else if (i == 14)
-//            SDL_Delay(30);
-//    }
+    while (i<14)
+    {
+        while (SDL_PollEvent(&event) != 0)
+        {
+            if (event.type == SDL_QUIT)
+            {
+                quitSDL(gWindow, renderer);
+                return;
+            }
+            Stickman->handleEventButNotMove();
+        }
+        i++;
+        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+        SDL_RenderClear(renderer);
+        Screen->render();
+        Gallow.render();
+        Stickman->loadTextureFromFile("Image/Stickman" + to_string(stick[i]) + ".png");
+        Stickman->render();
+        SDL_RenderPresent(renderer);
+        if (stick[i] == 2)
+            SDL_Delay(50);
+        else if (stick[i] == 3)
+            SDL_Delay(200);
+        else if (i == 3)
+            SDL_Delay(1500);
+        else if (i == 4)
+            SDL_Delay(1500);
+        else if (i == 5)
+            SDL_Delay(1500);
+        else if (i == 6)
+            SDL_Delay(800);
+        else if (i == 7)
+            SDL_Delay(100);
+        else if (i == 8)
+            SDL_Delay(30);
+        else if (i == 9)
+            SDL_Delay(30);
+        else if (i == 10)
+            SDL_Delay(30);
+        else if (i == 11)
+            SDL_Delay(30);
+        else if (i == 12)
+            SDL_Delay(30);
+        else if (i == 13)
+            SDL_Delay(30);
+        else if (i == 14)
+            SDL_Delay(30);
+    }
 
     Hand.render(304, 459, 61, 42);
 
-//    while(Hand.rect.x > 192)
-//    {
-//        while (SDL_PollEvent(&event) != 0)
-//        {
-//            if (event.type == SDL_QUIT)
-//            {
-//                quitSDL(gWindow, renderer);
-//                return;
-//            }
-//            Stickman->handleEventButNotMove();
-//        }
-//        Hand.rect.x-= 5;
-//        Hand.render();
-//        SDL_RenderPresent(renderer);
-//    }
+    while(Hand.rect.x > 192)
+    {
+        while (SDL_PollEvent(&event) != 0)
+        {
+            if (event.type == SDL_QUIT)
+            {
+                quitSDL(gWindow, renderer);
+                return;
+            }
+            Stickman->handleEventButNotMove();
+        }
+        Hand.rect.x-= 5;
+        Hand.render();
+        SDL_RenderPresent(renderer);
+    }
 
     Hand.loadTextureFromFile("Image/Hand1.png");
     Texture Gallow1("Image/Gallow1.png"), Gallow2("Image/Gallow2.png");
@@ -328,122 +328,122 @@ void animation(Texture* Screen, Texture* Stickman)
     SDL_Point center = {157, 25};
     Uint8 r = 255;
 
-//    while(Gallow2.rect.x > -400)
-//    {
-//        while (SDL_PollEvent(&event) != 0)
-//        {
-//            if (event.type == SDL_QUIT)
-//            {
-//                quitSDL(gWindow, renderer);
-//                return;
-//            }
-//            Stickman->handleEventButNotMove();
-//        }
-//        degrees -= 5;
-//        Gallow2.rect.x -= 3;
-//        Gallow2.rect.y -= 1;
-//
-//        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
-//        SDL_RenderClear(renderer);
-//
-//        Screen->render();
-//        Stickman->render();
-//        Hand.render(192, 459, 173, 42);
-//        Gallow2.render(degrees, &center, SDL_FLIP_NONE);
-//        Gallow1.render(r);
-//
-//        SDL_RenderPresent(renderer);
-//    }
+    while(Gallow2.rect.x > -400)
+    {
+        while (SDL_PollEvent(&event) != 0)
+        {
+            if (event.type == SDL_QUIT)
+            {
+                quitSDL(gWindow, renderer);
+                return;
+            }
+            Stickman->handleEventButNotMove();
+        }
+        degrees -= 5;
+        Gallow2.rect.x -= 3;
+        Gallow2.rect.y -= 1;
 
-//    while(r > 2)
-//    {
-//        while (SDL_PollEvent(&event) != 0)
-//        {
-//            if (event.type == SDL_QUIT)
-//            {
-//                quitSDL(gWindow, renderer);
-//                return;
-//            }
-//            Stickman->handleEventButNotMove();
-//        }
-//        r--;
-//        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
-//        SDL_RenderClear(renderer);
-//
-//        Screen->render();
-//        Stickman->render();
-//        Hand.render(192, 459, 173, 42);
-//        Gallow2.render(degrees, &center, SDL_FLIP_NONE);
-//        Gallow1.render(r);
-//
-//        SDL_RenderPresent(renderer);
-//    }
+        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+        SDL_RenderClear(renderer);
 
-//    while(i > 3)
-//    {
-//        while (SDL_PollEvent(&event) != 0)
-//        {
-//            if (event.type == SDL_QUIT)
-//            {
-//                quitSDL(gWindow, renderer);
-//                return;
-//            }
-//            Stickman->handleEventButNotMove();
-//        }
-//        i--;
-//        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
-//        SDL_RenderClear(renderer);
-//        Screen->render();
-//        Stickman->loadTextureFromFile("Image/Stickman" + to_string(stick[i]) + ".png");
-//        Stickman->render();
-//        SDL_RenderPresent(renderer);
-//        if (i == 8)
-//            SDL_Delay(30);
-//        else if (i == 9)
-//            SDL_Delay(30);
-//        else if (i == 10)
-//            SDL_Delay(30);
-//        else if (i == 11)
-//            SDL_Delay(30);
-//        else if (i == 12)
-//            SDL_Delay(30);
-//        else if (i == 13)
-//            SDL_Delay(30);
-//        else if (i == 14)
-//            SDL_Delay(30);
-//    }
-//    SDL_Delay(1000);
+        Screen->render();
+        Stickman->render();
+        Hand.render(192, 459, 173, 42);
+        Gallow2.render(degrees, &center, SDL_FLIP_NONE);
+        Gallow1.render(r);
 
-//    for(i = 0; i <= 30; i++)
-//    {
-//        while (SDL_PollEvent(&event) != 0)
-//        {
-//            if (event.type == SDL_QUIT)
-//            {
-//                quitSDL(gWindow, renderer);
-//                return;
-//            }
-//            Stickman->handleEventButNotMove();
-//        }
-//        if(i%2==0)
-//        {
-//            Stickman->rect.w -= 10;
-//            Stickman->rect.h -= 20;
-//            Stickman->rect.x += 5;
-//            Stickman->rect.y += 19;
-//        }
-//        else
-//        {
-//            Stickman->rect.w += 4;
-//            Stickman->rect.h += 8;
-//            Stickman->rect.x -= 2;
-//            Stickman->rect.y -= 8;
-//        }
-//        Screen->render();
-//        Stickman->render();
-//        SDL_RenderPresent(renderer);
-//        SDL_Delay(50);
-//    }
+        SDL_RenderPresent(renderer);
+    }
+
+    while(r > 2)
+    {
+        while (SDL_PollEvent(&event) != 0)
+        {
+            if (event.type == SDL_QUIT)
+            {
+                quitSDL(gWindow, renderer);
+                return;
+            }
+            Stickman->handleEventButNotMove();
+        }
+        r--;
+        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+        SDL_RenderClear(renderer);
+
+        Screen->render();
+        Stickman->render();
+        Hand.render(192, 459, 173, 42);
+        Gallow2.render(degrees, &center, SDL_FLIP_NONE);
+        Gallow1.render(r);
+
+        SDL_RenderPresent(renderer);
+    }
+
+    while(i > 3)
+    {
+        while (SDL_PollEvent(&event) != 0)
+        {
+            if (event.type == SDL_QUIT)
+            {
+                quitSDL(gWindow, renderer);
+                return;
+            }
+            Stickman->handleEventButNotMove();
+        }
+        i--;
+        SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+        SDL_RenderClear(renderer);
+        Screen->render();
+        Stickman->loadTextureFromFile("Image/Stickman" + to_string(stick[i]) + ".png");
+        Stickman->render();
+        SDL_RenderPresent(renderer);
+        if (i == 8)
+            SDL_Delay(30);
+        else if (i == 9)
+            SDL_Delay(30);
+        else if (i == 10)
+            SDL_Delay(30);
+        else if (i == 11)
+            SDL_Delay(30);
+        else if (i == 12)
+            SDL_Delay(30);
+        else if (i == 13)
+            SDL_Delay(30);
+        else if (i == 14)
+            SDL_Delay(30);
+    }
+    SDL_Delay(1000);
+
+    for(i = 0; i <= 30; i++)
+    {
+        while (SDL_PollEvent(&event) != 0)
+        {
+            if (event.type == SDL_QUIT)
+            {
+                quitSDL(gWindow, renderer);
+                return;
+            }
+            Stickman->handleEventButNotMove();
+        }
+        if(i%2==0)
+        {
+            Stickman->rect.w -= 10;
+            Stickman->rect.h -= 20;
+            Stickman->rect.x += 5;
+            Stickman->rect.y += 19;
+        }
+        else
+        {
+            Stickman->rect.w += 4;
+            Stickman->rect.h += 8;
+            Stickman->rect.x -= 2;
+            Stickman->rect.y -= 8;
+        }
+        Screen->render();
+        Stickman->render();
+        SDL_RenderPresent(renderer);
+        SDL_Delay(50);
+    }
 
     Texture Boom("Image/Boom.png");
     Screen->render();
